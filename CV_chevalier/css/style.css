@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+}
+
+.texte {
+    color: white;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100px;
+}
+
+.background {
+    width: auto;
+}
+/* li{ 
+list-style-type: none;
+}*/
