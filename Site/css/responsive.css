@@ -1,0 +1,51 @@
+@media only screen and (max-width: 890px) {
+
+	/* MENU - HEADER */
+	header {
+		display: none;
+		background-color: #1a53ff;
+	}
+
+	.navbar {
+		position: fixed;
+		display: flex;
+		margin-bottom: 0%;
+		justify-content: center;
+		width: 100%;
+		z-index: 15;
+		background-color: #1a53ff;
+	}
+
+	.nav-item {
+		text-align: center;
+	}
+
+	.titreNav {
+		text-align: center;
+	}
+
+	.nav.navbar.navbar-light {
+		 margin-bottom: 10000000em;
+	}
+
+	.navbar-brand {
+		margin: 0%;
+		padding: 0%;
+		width: 50%;
+		height: 50%;
+	}
+
+	.nav-link-current {
+		font-weight: bolder;
+		color: #4a6296;
+	}
+
+	/*FOOTER*/
+	.cpyr {
+		padding-left: 5rem;
+	}
+
+	.carousel-inner {
+		
+	}
+}

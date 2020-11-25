@@ -1,0 +1,96 @@
+/* Fichier CSS pour Index.Html */
+
+.middle {
+	position: absolute;
+	bottom: 15vh;
+	right: 15vh;
+	transform: translate(-50%, -50%);
+}
+
+.chevron {
+	position: fixed;
+	font-size: 5vh;
+	display: inline-block;
+	animation: loading 3s ease-in-out infinite; /* Transition du chevron qui se répète indéfiniment */
+}
+
+.chevss {
+	width: 22.5vh;
+	height: 7.5vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+@keyframes loading { /* Règle permettant de définir et contrôler des animations en CSS sans utiliser des transitions */
+	
+	0% {
+		margin-left: 0;
+		opacity: 0;
+		display: block;
+	}
+
+	50% {
+		margin-left: 50%;
+		opacity: 1;
+	}
+
+	100% {
+		margin-left: 100%;
+		opacity: 0;
+		display: none;
+	}
+  
+}
+
+a:focus, a:hover {
+	color: #333E48 !important;
+}
+
+a {
+	color: #333E48 !important;
+}
+
+.text {
+	animation: fadein 2s;
+    
+	margin-top: 20vw !important;
+	font-size: 6vh;
+	display: inline-block;
+	min-width: 50px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.text:after {
+	content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .75s ease, background-color .75s ease;
+	margin-top: 1vw;
+}
+
+.text:hover:after {
+    width: 90%;
+    background: #333E48;
+}
+
+.cpyr {
+	margin-top: 40vh;
+	text-align: center;
+	font-size: 1.5vh;
+}
+
+.col-md-12 {
+	text-align: center;
+}
