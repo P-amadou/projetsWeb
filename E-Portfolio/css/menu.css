@@ -1,0 +1,45 @@
+#haut{
+    background-color:  #5F021F;
+}
+#haut h1{
+    color: dimgrey;
+    text-align: center;
+}
+ul {
+    /*position: right;*/
+    list-style: none;
+    height: 2em;
+  }
+  li{
+    float: right;
+    font-size: 0.35em;
+  }
+  ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  ul li.is-active {
+    border-bottom: 4px solid dimgrey;
+  }
+  
+  ul li:hover {
+    border-bottom: 4px solid #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: dimgray;
+  }
+
+
+#mid{
+      background-color: dimgray;
+      color: #fff;
+  }
+
+#bas{
+    background-color:  #5F021F;
+    color: dimgray;
+}

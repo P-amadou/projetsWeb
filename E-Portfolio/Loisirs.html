@@ -1,0 +1,111 @@
+<html>
+<!--Page Loisirs -->
+<head>
+<title> E-Portfolio/Loisirs </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        //IMPORT THE HLS.JS LIBRARY HERE : 
+	  <script src="https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js"></script> //HLS.JS LIBRARY
+	//IMPORT THE PLAYER.JS WEBCOMPONENT :
+	  <script src="player.js"></script>
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+        <!-- end mobile specific info -->
+		
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		</head>
+<body>
+		<div id="globale">	<!-- début id="globale"-->
+			
+			<header> <!-- début id="header"-->
+				<a id="logo" href=" E-Portfolio.html"></a>
+				
+				<div id="nom">
+					<h1> LOISIRS</h1>
+				</div>
+				
+				<nav>
+				<div id="menu">
+					<ul>
+						<li><a href="Formations.html">Formations</a></li>
+						<li><a href="Expériences.html">Expériences</a></li>
+						<li><a href="Compétences.html">Compétences</a></li>
+						<li><a href="Loisirs.html">Loisirs</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+					<div id="page">
+				
+			<section id="sec1">
+				<player-videostreaming
+			id="video-rabbit" 
+			url="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+			widthChoice="800"
+			heightChoice="500"
+			autoPlay="true"
+			backgroundColor="#000"
+		>
+				<article>
+				<h1>SPORTS</h1>
+				<center>
+					<p>Les sports que je pratique sont le football, le basket-ball, le parkour avec des amis.</p> </br>
+					<p>Ainsi que le karaté en club. </p>
+					<img src="img/karaté.jpg" alt="karaté" width="80%"/>
+					<p></p></br>
+					<p>Je supporte les Chicago Bulls au basket.</p>
+					<img src="img/Michael-Jordan.jpg" alt="Michael-Jordan Chicago Bulls" width="80%"/>
+					<p></p></br>
+					<p>Pour le football, je supporte le PSG et le Real de Madrid.</p>
+					<img src="img/football.jpg" alt="football" width="80%"/>
+				</center>
+				</article>
+				
+				<article>
+				<h1>SERIES</h1>
+					<p> Les types de séries que je regarde le plus souvent sont ceux d'actions et de science-fiction. En ce moment je regarde The Flash et Blacklightning. </p><br>
+					<img src="img/flash.jpg" alt="Flash" width="25%"/>
+					<img src="img/blacklightning.jpg" alt="Blacklightning" width="25%"/>
+				</article>
+				
+				<article class="audio">
+				<h1>MUSIQUES</h1>
+					<p> Pour les musiques, j'écoute un peu de tout comme musique.</p>
+					<audio  loop="loop" controls="controls"> <!-- autoplay="autoplay" -->
+					<source src="./audio/animals.mp3" type="audio/mp3"/>
+					</audio>
+					<p> Mais j'écoute actuellement principalement de la POP (K-POP et J-POP) et de l'électro.</p><br>
+					<audio  loop="loop" controls="controls"> <!-- autoplay="autoplay" -->
+					<source src="./audio/boombayah.mp3" type="audio/mp3"/>
+					</audio>
+				</article>
+				
+				<article class="video">
+				<h1>MANGAS/ANIMES</h1><br>
+					<p> Je suis un grand fan de mangas et d'animes. J'aime un tout en terme de mangas et d'animes avec une préférences pour les shonen. </p>
+				<img src="img/mangas.jpg" alt "mangas" width="80%"/>
+				<p></p><br>
+				<video  loop="loop"  controls="controls"> 
+					<source src="./video/gon vs pitou.mp4" type="video/mp4"/>  
+					<source src="./video/gon vs pitou.3gp" type="video/3gp"/> 
+					</video>
+				</article>
+				
+				<article class="video">
+				<h1>JEUX VIDEOS</h1>
+					<p> Je suis un grand fan de jeux vidéos. Pour les jeux vidéos, je suis du genre RPG, MMORPG, jeu d'action et d'aventure. </p>
+				<video  loop="loop"  controls="controls"> 
+					<source src="./video/absolver.mp4" type="video/mp4"/>  
+					<source src="./video/absolver.3gp" type="video/3gp"/> 
+					</video>
+				</article>
+				
+			</section>
+			</div> <!-- fin id="page"-->
+			
+			<footer><!-- début id="page"-->
+			<a href="#globale">Haut de page</a>
+			</footer><!-- fin footer-->
+			
+		</div> <!-- fin id="globale"-->
+</body>
+
+</html>
