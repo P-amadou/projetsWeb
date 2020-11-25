@@ -1,0 +1,74 @@
+
+*{
+  
+    font-family: "Gill Sans", sans-serif;
+}
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(191,50,50,1) 50%, rgba(252,176,69,1) 100%);
+
+}
+
+#accueil{
+
+    margin : 0 auto; 
+    width: 320px;
+    border-radius: 25% 10%;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    margin-top: -180px;
+    margin-left: -100px;
+    height: 250px;
+    padding-top:5em;
+    padding-bottom: 5em;;
+}
+
+#titre{
+    margin: 0 auto;
+    width: 800px;
+    background-color: transparent;
+    position: fixed;
+    top: 30%;
+    left: 5%;
+}
+
+#presentation{
+    background-color: white;
+    border-radius: 55% 10%;
+    margin-left: 50px;
+}
+
+ #presentation h1{
+    position: relative;
+    background-color: white;
+    top: 50px;
+ 
+
+}
+
+#btnGo{
+    border-radius: 30px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(191,50,50,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 200%;
+    margin : 0 auto; 
+    width: 100px;
+    margin-left: 40%;
+    height: 60px;
+    position: relative;
+    top: 70px;
+    border: #B4CDCD;
+    color:white; 
+    font-weight: bold;
+}
+
+#btnGo:hover{
+    
+    background-position:right;
+    cursor:pointer;
+    transition:500ms;
+   
+    
+}

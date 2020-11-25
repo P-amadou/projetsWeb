@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Carte des points wifi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="../CSS/carte.css" rel="stylesheet">
+
+
+<!-- lien marqueurs -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
+<link rel="stylesheet" href="https://unpkg.com/browse/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>  
+
+     <!--routing leaflet-->
+
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    
+   <!-- liens Marqueurs Clusters-Amadou -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+ <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+</head>
+
+<body>
+
+    <div id="carte" class="carte">
+    </div>
+   
+    <script src="../js/carte.js"></script>
+    <div id="message"></div>
+    <div id="btnItineraire"></div>
+  
+
+    <div class="slidecontainer">
+       
+        <label for="distTmp" class = "checkbox">
+            <p>Voici les <span id="demo"></span> points de wifi les plus proches selon  <span  id="demo2"></span></p>
+            <input type ="hidden" id="demo3" value="true">
+            <span class="switch">
+                <input type ="checkbox" id="distTmp" class = "checkbox">
+                
+                <span class="switch-container">
+                    <span class="tmp">Temps</span>
+                
+                    <span class="mid"></span>
+        
+                    <span class="dist">Distance</span>
+                 </span>
+            </span>
+        </label>
+        <p> Modifier le nombre de points de wifi affichés </p>
+        <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+     
+        
+        
+        
+    </div>
+
+  
+ 
+
+    
+
+</body>
+
+
+</html>
