@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppMobileEmmaus</string>
+    <string name="ajouterDonation">Ajouter donation</string>
+    <string name="listeDonation">Liste des donations</string>
+    <string name="typeDonation">Type de Donation :</string>
+    <string name="next">Suivant</string>
+    <string name="val">Valider</string>
+    <string name="lib">Libellé :</string>
+    <string name="marque">Marque :</string>
+    <string name="cat">Catégorie :</string>
+    <string name="size">Taille :</string>
+    <string name="couleur">Couleurs :</string>
+    <string name="etat">Etat :</string>
+    <string name="qte">Quantité :</string>
+    <string name="dateP">Date de péremption :</string>
+    <string name="montant">Montant :</string>
+    <string name="cherche">Rechercher :</string>
+    <string name="boutonOk"> OK </string>
+
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorBackgroundAppli"
+    tools:context=".AjoutAlimentaire">
+
+    <TextView
+        android:id="@+id/textLib"
+        android:layout_width="273dp"
+        android:layout_height="23dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/lib"
+        android:textColor="@color/colorTexteBlanc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Spinner
+        android:id="@+id/spinnerCat"
+        android:layout_width="213dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorJaunePastel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCat"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textCat"
+        android:layout_width="290dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cat"
+        android:textColor="@color/colorTexteBlanc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLib"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextLib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorJaunePastel"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLib"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textDatePerem"
+        android:layout_width="206dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dateP"
+        android:textColor="@color/colorTexteBlanc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerQte"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textQte"
+        android:layout_width="214dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/qte"
+        android:textColor="@color/colorTexteBlanc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCat"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/editTextDatePerem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorJaunePastel"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDatePerem"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonValider"
+        android:layout_width="226dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/colorBackgroundJaune"
+        android:text="@string/val"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDatePerem"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <Spinner
+        android:id="@+id/spinnerQte"
+        android:layout_width="205dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorJaunePastel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQte" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
