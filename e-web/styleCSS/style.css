@@ -1,0 +1,124 @@
+/* Entête & Footer */
+
+* {
+	box-sizing : border-box; /*les espaces vont jusqu'à la bordure sauf pour le margin*/
+	border : 0;
+	margin: 0;
+	padding: 0;
+	font-size:100%;
+	color:#C59800;
+	font-family: 'Century Gothic', Calibri, serif;
+	text-decoration : none;
+	list-style-type : none;
+}
+
+
+/* Entête & Footer */
+
+body {
+	width: 100%;
+	height: 100%;	
+	/*font-size: 13px;*/
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: scroll;
+	/*background-attachment:fixed;*/
+}
+
+header p, header h1, footer p, #logo {
+	text-align: center;
+}
+
+#logo img{
+	margin : 1% 3% 0% 2%;
+	width: 15.5%;
+}
+
+
+header {
+	padding: 5%;
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid;
+    margin: 5% 25%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+header h1 {	
+	font-size: 1.8em;
+	font-weight: normal;
+	padding: 2%;
+}
+
+header p{
+	padding: 2%;
+}
+
+footer {
+	height: 15%;
+	margin-top: 1%;
+	background-color: #F5F5DC;
+	border-top: 2px solid #AAA;
+	opacity: 0.7;
+}
+
+#page {
+	padding : 1.5% 15%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#page article:hover{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+/* Article */
+
+
+.A1, .A2{
+	display : block;
+	margin-top: 1%;
+	background-color: #fbffc0;
+	opacity: 0.8;
+    height: 100px !important;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.A1{
+	width : 50%;
+	float: left;
+    margin-right : 1%;
+}
+
+.A2{
+	width : 49%;
+	float : right;
+}
+
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('CaviarDreams.ttf');
+}
+
+.titre{
+  font-family: CaviarDreams;	
+	padding : 9%;
+	color: #aa5304;
+	font-size: 1.8em;
+}
+
+h2{
+	font-size: 1.3em;
+	padding-bottom: 1%;
+}
+
+#nom{
+	padding: 5%;
+}
+

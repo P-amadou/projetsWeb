@@ -1,0 +1,213 @@
+
+
+* {
+	box-sizing : border-box; /*les espaces vont jusqu'à la bordure sauf pour le margin*/
+	border : 0;
+	margin: 0;
+	padding: 0;
+	font-size:100%;
+	color:#C59800;
+	font-family: 'Century Gothic', Calibri, serif;
+	text-decoration : none;
+	list-style-type : none;
+}
+
+
+/* Entête & Footer */
+
+body {
+	width: 100%;
+	height: 100%;	
+	/*font-size: 13px;*/
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: scroll;
+	/*background-attachment:fixed;*/
+}
+
+.ancre a, .ancre, footer, .PageEnCours p, #page{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+a:hover {
+	color: #000000;;
+	transition:0.5s;
+	background-color: #F5F5DC;
+}
+
+header h1 {
+	/*font-size: 40px;*/
+	font-size: 1.8em;
+	font-weight: normal;
+	text-align: center;
+	padding: 2%;
+}
+
+header p, header h1, footer p, .ancre a  {
+	/*font-size: 15px;*/
+	text-align: center;
+}
+
+
+header {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid;
+    margin: 7% 30%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+header h1 {
+	/*font-size: 40px;*/
+	font-size: 1.8em;
+	font-weight: normal;
+	text-align: center;
+	padding: 2%;
+}
+
+header p{
+	padding: 2%;
+}
+footer {
+	height: 15%;
+	margin-top: 1%;
+	background-color: #F5F5DC;
+	border-top: 2px solid #AAA;
+	opacity: 0.7;
+}
+
+#nav {
+	z-index : 20;
+	top : 35%;
+	left : 10%;
+}
+
+
+#menu {
+	width: 100%;
+	padding : 2% 1% 0% 2%;
+	background-attachment : fixed;
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.SansDrop{
+	border : 4px double;
+	padding: 1% 4%;
+	display : inline-block;
+}
+ 
+.SansDrop:hover, .AvecDrop:hover {
+	background-color : #F5F5DC;
+}
+
+/* Avec menu déroulant*/
+.AvecDrop {
+    position: relative;
+    display: inline-block;
+    border: 4px double;
+    padding: 1% 4%;
+}
+
+/* Contenu du sous-menu*/
+.AvecDrop-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    right : 0;
+    z-index: 1;
+}
+
+/* Déroule le sous-menu */
+.AvecDrop:hover .AvecDrop-content {
+	top :100%;
+	border: 4px double;
+    display: block;
+    background-color: #FFFFFF;
+ }
+
+.AvecDrop:hover .AvecDrop-content a{
+	width: 100%;
+	display: block;
+	border-bottom: 0.5px solid;
+	padding: 5%;
+}
+
+#logo img {
+  width: 60px;
+    padding: 0.5;
+}
+
+#logo{
+	border-style: none;
+}
+
+#JeSuisLa {
+	background-color: #FFFFFF;
+}
+
+#JeSuisLa a:hover{
+	background-color: #FFFFFF;
+}
+
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('CaviarDreams.ttf');
+}
+
+.titre{
+  font-family: CaviarDreams;	
+	padding : 9%;
+	color: #aa5304;
+	/*font-size: 200%;*/
+}
+
+
+#page {
+	width: 80%;
+	background-color: #F5F5DC;
+	margin-left: 10%;
+	border: 1px solid;
+}
+
+
+#globale {
+	height: 100%;
+	width : 100%;
+	min-width: 1200px; /*taile en-dessous de laquelle on ne peut plus réduire la page*/
+	max-width: 1200px;
+	margin : 0 auto;
+	padding : 3%;
+	background-color : #FFF5EE;
+	padding: 0.5% 13%;
+}
+
+.PageEnCours{
+	overflow: hidden;
+	background-color: #F5F5DC;
+	padding : 5% 3%;
+}
+
+.PageEnCours p{
+	color: #000000;
+}
+
+.gauche{
+	float : left;
+	margin: 1% 2% 1% 1%;
+	width: 25%;
+}
+
+.droite{
+	float : right;
+	margin: 1% 1%;
+	width: 35%;
+}
+

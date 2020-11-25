@@ -1,0 +1,73 @@
+@media screen and (max-width: 680px){
+	/*Commun*/
+	body{
+		min-width: 300px;
+	}
+	#nom{
+		font-size: 100%;
+	}
+	/*menu*/
+	.AvecDrop, .SansDrop{
+		display: block;
+		height: 1%;
+	}
+
+	header{
+		width: 70%;
+		margin : 7% 16%;
+	}
+
+    /*Loisirs*/
+	.A2, .A1{
+		float: none;
+		width: 100%;
+	}
+	iframe{
+		width:200px;
+	}
+	video{
+		width:200px;
+	}
+	audio{
+	width:200px;}
+	
+    /*Cursus Scolaire*/
+	.container{
+		overflow: auto;
+	}
+	/*Accueil*/
+	#Qui{
+		text-align: center;
+	}
+
+	.remplir, .selection{
+		margin-left: 2%;
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 681px) and (max-width: 1200px){
+	/*Commun*/
+
+	.AvecDrop, .SansDrop{
+		width: 49%;
+		height: 1%;
+	}
+	
+	/*Loisirs*/
+	.A2, .A1{
+		float: none;
+		width: 100%;
+	}
+	iframe{
+		width:250px;
+	}
+	/*Accueil*/
+	
+	.remplir, .selection{
+		margin-left: 9%;
+		width: 100%;
+	}
+}
+
